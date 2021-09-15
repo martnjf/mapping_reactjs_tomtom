@@ -8,7 +8,8 @@ export default function App() {
   );
 }
 
-/* Herramientas utilizadas:
+/* 
+  Herramientas utilizadas:
   - API de TomTom, utilizando su entorno, sus API de map y routing para poder calcular ditsnacias no lineales entre dos puntos.
     - @tomtom-international/web-sdk-maps
     - @tomtom-international/web-sdk-services

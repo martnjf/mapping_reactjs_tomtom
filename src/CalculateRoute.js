@@ -68,6 +68,7 @@ function CalcularRuta(){
   );
   const notify = () => toast("error de datos"); // Mensaje de error 
 /* 3. */
+/* 4. Return, inputs para integrar las coordenadas. */
   return (  
     <div className="App">
         <ToastContainer/>
@@ -129,7 +130,8 @@ function CalcularRuta(){
         </div> */}
       </div>
 
-  ); 
+  );
+/* 4. */ 
 }
 export default CalcularRuta;
 
