@@ -15,6 +15,4 @@ export default function App() {
   - React JS.
   - React Toastify para poder mostrar errores.
     - import { ToastContainer, toast } from "react-toastify";
-
-
 */
