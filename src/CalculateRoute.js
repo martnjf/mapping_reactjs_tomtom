@@ -10,7 +10,7 @@ function CalcularRuta(){
   const [startLongitude, setStartLongitude] = useState("");
   const [destinationLatitude, setDestinationLatitude] = useState("");
   const [destinationLongitude, setDestinationLongitude] = useState("");
-  const [result, setResult] = useState({});
+  const [result, setResult] = useState({}); 
   const mapElement = useRef();
   const [map, setMap] = useState({});
   const [latitude, setLatitude] = useState(21.1236);
@@ -36,7 +36,8 @@ function CalcularRuta(){
       .calculateRoute({
         key: "FWQcuCT1v2OQdZIZVuyL8GF0xMpar2Zq",
         /* locations: `${startLatitude}` + "," + `${startLongitude}` + ":" + `${destinationLatitude}` + "," + `${destinationLongitude}`, */
-        locations: `${startLatitude},${startLongitude}:${destinationLatitude},${destinationLongitude}`,
+        /* locations: `${startLatitude},${startLongitude}:${destinationLatitude},${destinationLongitude}`, */
+        locations: '21.1528,-101.7113:21.1335,-101.6804',
       })
       .then(function (routeData) { 
         map.setCenter([parseFloat(startLatitude), parseFloat(startLongitude)]);
